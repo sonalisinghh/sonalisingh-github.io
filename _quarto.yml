@@ -1,0 +1,29 @@
+project: 
+  type: website
+  output-dir: docs
+  
+name: "your-website"
+navbar:
+  title: "Sonali Singh"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Experience"
+      href: experience.html
+    - text: "Projects"
+      href: projects.html
+    - text: "Education"
+      href: education.html
+    - text: "Contact"
+      href: contact.html
+    - text: "Resume"
+      href: resume.html
+    - text: "CV"
+      href: cv.html
+
+output:
+  html_document:
+    theme: united
+    highlight: tango
