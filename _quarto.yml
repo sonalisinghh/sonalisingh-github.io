@@ -1,6 +1,37 @@
 project: 
   type: website
   output-dir: docs
+source: .
+destination: ./_site
+gem 'jekyll-sass-converter', '~> 2.1'
+name: Jekyll Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build site
+        run: bundle exec jekyll build --trace
 
 name: "my-website"
 navbar:
