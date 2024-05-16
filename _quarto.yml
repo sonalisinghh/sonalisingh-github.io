@@ -1,7 +1,6 @@
 project: 
   type: website
   output-dir: docs
-  theme: jekyll-theme-minimal
 
 name: "my-website"
 navbar:
@@ -26,5 +25,4 @@ navbar:
 
 output:
   html_document:
-theme: jekyll-theme-minimal
     highlight: tango
