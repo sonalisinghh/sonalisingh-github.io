@@ -1,8 +1,9 @@
 project: 
   type: website
   output-dir: docs
-  
-name: "your-website"
+  theme: jekyll-theme-minimal
+
+name: "my-website"
 navbar:
   title: "Sonali Singh"
   left:
@@ -25,5 +26,5 @@ navbar:
 
 output:
   html_document:
-    theme: united
+theme: jekyll-theme-minimal
     highlight: tango
